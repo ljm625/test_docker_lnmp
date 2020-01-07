@@ -1,0 +1,4 @@
+#!/bin/sh
+crontab /etc/cron.d/ssrpanel
+php /var/www/html/ssrpanel/artisan key:generate
+cron -f
